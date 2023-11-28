@@ -7,7 +7,7 @@ class Api::V1::StripeController < ApplicationController
 		payload = request.body.read
 
 		# add your cli key here for testing of webhook
-		webhook_secret = 'whsec_35f18703e28f621c382e94bcac338987578e56abc439c0e59c92c76292f79aa7'
+		webhook_secret = 'whsec_'
 	 
     # Retrieve the event by verifying the signature using the raw body and secret if webhook signing is configured.
     sig_header = request.env['HTTP_STRIPE_SIGNATURE']
