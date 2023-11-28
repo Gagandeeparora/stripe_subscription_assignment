@@ -7,10 +7,9 @@ Things you may want to cover:
 
 * Ruby version - 3.2.2
 
-* Configuration
+* Ruby version - 7.1.2
 
-* Database creation
-	Need mysql database.
+* Database - Need mysql database.
 
 * How to run project.
 	1. Clone the repository.
@@ -19,7 +18,7 @@ Things you may want to cover:
 	4. Stripe credentials are saved on credential.yml file
 	5. For testing of webhook events, strip cli can be downloaded and please replace secret with your own machine secret. 
 
-* I have already created a test plan on the dashboad.
+* I have already created a test plan on stripe dashboad.
 
-* I haven't added test cases for now. but if needed i can write that too.
+* I haven't added test cases for now. But if needed i can write that too.
 
