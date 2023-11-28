@@ -1,7 +1,8 @@
 class Api::V1::StripeController < ApplicationController
-	
+	skip_before_action :verify_authenticity_token
+
+	# We can move processing background also for better latency.
 	def stripe_events
-		# binding.pry
 
 		payload = request.body.read
 
