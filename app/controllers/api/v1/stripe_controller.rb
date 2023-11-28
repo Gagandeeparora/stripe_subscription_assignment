@@ -43,7 +43,7 @@ class Api::V1::StripeController < ApplicationController
 	  # handle when subscription is cancelled
 	  when 'customer.subscription.deleted'
 	  	if data_object.status == 'canceled'
-	  		subscription = Subscription.get_subscription_from_session_id(data_object.id)
+	  		subscription = Subscription.find_by(stripe_subscription_id: data_object.id)
 	  		subscription.update(status: 2) if (subscription && subscription.paid? )
 	  	end
 	  end
